@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerBill Estimator</string>
+    <string name="title_history">Bill History</string>
+    <string name="title_detail">Bill Details</string>
+    <string name="title_about">About</string>
+    <string name="menu_history">History</string>
+    <string name="menu_about">About</string>
+
+    <!-- Main page -->
+    <string name="header_title">Estimate your monthly electricity bill</string>
+    <string name="header_subtitle">Block tariff from 21.8 to 54.6 sen/kWh</string>
+    <string name="how_to_use_title">How to use</string>
+    <string name="how_to_use_short" formatted="false">1. Choose the billing month.\n2. Enter the electricity used (1 – 1000 kWh).\n3. Slide to set your rebate (0% – 5%).\n4. Tap Calculate &amp; Save. The result appears below and is saved to History.\nFull instructions: tap the (i) About icon in the title bar.</string>
+    <string name="input_title">Bill details</string>
+    <string name="label_month">Month</string>
+    <string name="label_units">Electricity used (kWh)</string>
+    <string name="hint_units">e.g. 350</string>
+    <string name="helper_units">Whole numbers only, from 1 to 1000 kWh.</string>
+    <string name="label_rebate">Rebate</string>
+    <string name="helper_rebate" formatted="false">Drag the slider to choose a rebate between 0% and 5% (steps of 0.5%).</string>
+    <string name="scale_min" formatted="false">0%</string>
+    <string name="scale_mid" formatted="false">2.5%</string>
+    <string name="scale_max" formatted="false">5%</string>
+    <string name="btn_calculate">Calculate &amp; Save</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_view_history">View saved bills</string>
+
+    <string name="result_title">Result</string>
+    <string name="res_month">Month</string>
+    <string name="res_units">Units used</string>
+    <string name="res_total">Total charges</string>
+    <string name="res_rebate">Rebate</string>
+    <string name="res_final">Final cost</string>
+    <string name="res_breakdown">Calculation breakdown</string>
+    <string name="saved_note">✓ Saved to History. Tap the clock icon in the title bar to see all bills.</string>
+
+    <string name="tariff_title">Tariff rates</string>
+    <string name="tariff_block1">1 – 200 kWh</string>
+    <string name="tariff_block2">201 – 300 kWh</string>
+    <string name="tariff_block3">301 – 600 kWh</string>
+    <string name="tariff_block4">601 – 1000 kWh</string>
+    <string name="tariff_rate1">21.8 sen/kWh</string>
+    <string name="tariff_rate2">33.4 sen/kWh</string>
+    <string name="tariff_rate3">51.6 sen/kWh</string>
+    <string name="tariff_rate4">54.6 sen/kWh</string>
+    <string name="tariff_formula">Final cost = Total charges − (Total charges × Rebate %)</string>
+
+    <!-- Formats and messages -->
+    <string name="rebate_value">%1$.1f%%</string>
+    <string name="units_format">%1$d kWh</string>
+    <string name="rebate_detail">%1$.1f%% (− %2$s)</string>
+    <string name="error_units_empty">Please enter the number of units used.</string>
+    <string name="error_units_range">Units must be a whole number between 1 and 1000.</string>
+    <string name="toast_saved">Bill calculated and saved to History</string>
+    <string name="toast_save_failed">Could not save the bill. Please try again.</string>
+    <string name="toast_reset">Form cleared</string>
+
+    <!-- History page -->
+    <string name="history_hint">Tap a bill to view details, edit or delete it.</string>
+    <string name="history_empty">No bills saved yet.\n\nCalculate a bill on the main page and it will appear here.</string>
+    <string name="history_count">%1$d saved bill(s)</string>
+    <string name="col_month">Month</string>
+    <string name="col_final">Final cost</string>
+
+    <!-- Detail page -->
+    <string name="detail_header">Bill summary</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_save_changes">Save changes</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="edit_title">Edit bill</string>
+    <string name="edit_hint">Change any value and tap Save changes. Charges are recalculated automatically.</string>
+    <string name="toast_updated">Bill updated</string>
+    <string name="toast_deleted">Bill deleted</string>
+    <string name="toast_not_found">This record no longer exists.</string>
+    <string name="delete_title">Delete this bill?</string>
+    <string name="delete_message">The %1$s bill will be permanently removed from the database.</string>
+
+    <!-- About page: REPLACE THE [PLACEHOLDERS] WITH YOUR DETAILS -->
+    <string name="university_name">Qaiwan International University
+Universiti Teknologi MARA</string>
+    <string name="submission_date">Date: 17 / 11 / 2026</string>
+    <string name="student_info_title">Student information</string>
+    <string name="student_name">Arkal Akram Ahmed</string>
+    <string name="student_id">Student ID: QIU 23-0337</string>
+    <string name="course_code">Course code: [COURSE CODE]</string>
+    <string name="course_name">Course name: Mobile Application</string>
+    <string name="github_url">https://github.com/arkalroyale-dotcom/PowerBillEstimator</string>
+    <string name="copyright">© 2026 Arkal Akram Ahmed. All rights reserved.\nDeveloped as an individual assignment for Mobile Application.</string>
+
+    <string name="about_app_title">About this app</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="about_app_desc">PowerBill Estimator calculates your monthly electricity bill using block tariff rates, applies your rebate, and stores every result in an offline SQLite database so you can review, edit or delete it later.</string>
+    <string name="website_title">Application website</string>
+    <string name="website_hint">Tap the link or the button to open the project page on GitHub.</string>
+    <string name="btn_open_website">Open app website</string>
+    <string name="no_browser">No browser found to open the link.</string>
+    <string name="instructions_title">How to use the app</string>
+    <string name="instructions_full" formatted="false">1. Select the billing month from the Month dropdown (January – December).\n\n2. Type the electricity used in kWh. Only whole numbers from 1 to 1000 are accepted. A red error message appears if the field is empty or out of range.\n\n3. Drag the Rebate slider to choose a rebate from 0% to 5%.\n\n4. Tap Calculate &amp; Save. The total charges, rebate, final cost and a block-by-block breakdown appear on the same page, and the result is saved in the local database.\n\n5. Tap the clock icon (History) in the title bar, or the View saved bills button, to see all saved bills listed by month with their final cost.\n\n6. Tap any bill in the list to open its details: month, units, total charges, rebate and final cost.\n\n7. On the details page, tap Edit to change the month, units or rebate and then Save changes, or tap Delete to remove the bill.\n\n8. Tap Reset on the main page to clear the form.\n\nHow charges work: the first 200 kWh cost 21.8 sen each, the next 100 kWh cost 33.4 sen, the next 300 kWh cost 51.6 sen, and every kWh above 600 costs 54.6 sen.</string>
+
+    <string name="cd_logo_qiu">Qaiwan International University logo</string>
+    <string name="cd_logo_uitm">Universiti Teknologi MARA logo</string>
+    <string name="cd_student_photo">Student photo</string>
+    <string name="cd_app_icon">App icon</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Unique app icon: amber coin with a lightning bolt and a small "bill" tick line -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M54,22a32,32 0,1 1,0 64a32,32 0,1 1,0 -64z" />
+    <path
+        android:fillColor="#FCD34D"
+        android:pathData="M54,27a27,27 0,1 1,0 54a27,27 0,1 1,0 -54z" />
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M59,31 L39,58 L51,58 L47,77 L69,48 L57,48 Z" />
+</vector>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_header"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_icon_circle"
+                android:contentDescription="@string/cd_app_icon"
+                android:padding="12dp"
+                android:src="@drawable/ic_bolt" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/header_subtitle"
+                    android:textColor="@color/primary_soft"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Instructions -->
+        <LinearLayout style="@style/CardBox">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/how_to_use_title" />
+
+            <TextView
+                style="@style/BodyText"
+                android:text="@string/how_to_use_short" />
+        </LinearLayout>
+
+        <!-- Inputs -->
+        <LinearLayout style="@style/CardBox">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/input_title" />
+
+            <TextView
+                style="@style/Label"
+                android:layout_marginTop="0dp"
+                android:text="@string/label_month" />
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                style="@style/SpinnerField" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_units" />
+
+            <EditText
+                android:id="@+id/etUnits"
+                style="@style/InputField"
+                android:hint="@string/hint_units"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <TextView
+                style="@style/HelperText"
+                android:text="@string/helper_units" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Label"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/label_rebate" />
+
+                <TextView
+                    android:id="@+id/tvRebateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/accent_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekRebate"
+                style="@style/RebateSeekBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/scale_min"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/scale_mid"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/scale_max"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/HelperText"
+                android:text="@string/helper_rebate" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="18dp"
+                android:text="@string/btn_calculate" />
+
+            <Button
+                android:id="@+id/btnReset"
+                style="@style/ButtonSecondary"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_reset" />
+        </LinearLayout>
+
+        <!-- Result (same page) -->
+        <LinearLayout
+            android:id="@+id/resultCard"
+            style="@style/CardBox"
+            android:background="@drawable/bg_result"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/result_title" />
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/res_month" />
+                <TextView android:id="@+id/tvResMonth" style="@style/RowValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/res_units" />
+                <TextView android:id="@+id/tvResUnits" style="@style/RowValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/res_total" />
+                <TextView android:id="@+id/tvResTotal" style="@style/RowValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/res_rebate" />
+                <TextView
+                    android:id="@+id/tvResRebate"
+                    style="@style/RowValue"
+                    android:textColor="@color/success" />
+            </LinearLayout>
+
+            <View style="@style/Divider" />
+
+            <LinearLayout
+                style="@style/ResultRow"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/RowLabel"
+                    android:text="@string/res_final"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvResFinal"
+                    style="@style/RowValue"
+                    android:textColor="@color/primary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/res_breakdown" />
+
+            <TextView
+                android:id="@+id/tvBreakdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/saved_note"
+                android:textColor="@color/success"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tariff reference -->
+        <LinearLayout style="@style/CardBox">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/tariff_title" />
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/tariff_block1" />
+                <TextView style="@style/RowValue" android:text="@string/tariff_rate1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/tariff_block2" />
+                <TextView style="@style/RowValue" android:text="@string/tariff_rate2" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/tariff_block3" />
+                <TextView style="@style/RowValue" android:text="@string/tariff_rate3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultRow">
+                <TextView style="@style/RowLabel" android:text="@string/tariff_block4" />
+                <TextView style="@style/RowValue" android:text="@string/tariff_rate4" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/HelperText"
+                android:layout_marginTop="8dp"
+                android:text="@string/tariff_formula" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHistory"
+            style="@style/ButtonSecondary"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_view_history" />
+    </LinearLayout>
+</ScrollView>
