@@ -18,7 +18,7 @@
 
 An Android app that estimates a monthly electricity bill using block tariff rates, applies a rebate, and stores every result in an offline SQLite database.
 
-**Demo video:** [YOUTUBE LINK]
+**Demo video:** https://youtu.be/Ed_iMe2115w
 **Signed APK:** see the [Releases](https://github.com/arkalroyale-dotcom/PowerBillEstimator/releases) page
 
 ## Features
