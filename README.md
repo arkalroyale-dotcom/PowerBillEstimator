@@ -32,7 +32,7 @@ An Android app that estimates a monthly electricity bill using block tariff rate
 | Detail page | Tap a row to view all details, **Edit** (recalculates) or **Delete** (with confirmation) |
 | Layout | Custom blue/amber theme, app name in the title bar, custom adaptive lightning-bolt icon, title-bar action icons |
 | Good design | Number-only input, red error messages, live validation, helper text, toasts, on-screen instructions, tariff table |
-| About page | University logos and names, student photo, full name, student ID, course code and name, copyright, clickable website URL, full instructions |
+| About page | University logos and names, student photo, full name, student ID, course name, copyright, clickable website URL, full instructions |
 
 ## Tariff
 

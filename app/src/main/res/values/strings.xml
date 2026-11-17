@@ -77,14 +77,13 @@
     <string name="delete_title">Delete this bill?</string>
     <string name="delete_message">The %1$s bill will be permanently removed from the database.</string>
 
-    <!-- About page: REPLACE THE [PLACEHOLDERS] WITH YOUR DETAILS -->
     <string name="university_name">Qaiwan International University
 Universiti Teknologi MARA</string>
     <string name="submission_date">Date: 17 / 11 / 2026</string>
     <string name="student_info_title">Student information</string>
+    <!-- About page details -->
     <string name="student_name">Arkal Akram Ahmed</string>
     <string name="student_id">Student ID: QIU 23-0337</string>
-    <string name="course_code">Course code: [COURSE CODE]</string>
     <string name="course_name">Course name: Mobile Application</string>
     <string name="github_url">https://github.com/arkalroyale-dotcom/PowerBillEstimator</string>
     <string name="copyright">© 2026 Arkal Akram Ahmed. All rights reserved.\nDeveloped as an individual assignment for Mobile Application.</string>

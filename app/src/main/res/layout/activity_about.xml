@@ -67,7 +67,7 @@
                 android:background="@drawable/bg_card"
                 android:contentDescription="@string/cd_student_photo"
                 android:scaleType="centerCrop"
-                android:src="@drawable/student_photo" />
+                android:src="@drawable/student_photo_arkal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,14 +84,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/student_id"
-                android:textColor="@color/text_primary"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="@string/course_code"
                 android:textColor="@color/text_primary"
                 android:textSize="15sp" />
 
